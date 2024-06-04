@@ -1,2 +1,52 @@
-[InternetShortcut]
-URL=https://ava.univassouras.edu.br/pluginfile.php/1483103/assignsubmission_file/submission_files/181349/Atividade.pdf?forcedownload=1
+print("Bem Vindo a Biblioteca Virtual da Universidade de Vassouras!")
+
+def login():
+    username = input("Digite seu nome de usuário: ")
+    password = input("Digite sua senha: ")
+    
+    # Verificar se o nome de usuário e senha estão corretos
+    if username == "Ramon Oliveira" and password == "123456":
+        print("Login bem-sucedido!")
+        return True
+    else:
+        print("Nome de usuário ou senha incorretos.")
+        return False
+
+def main():
+    try:
+        logged_in = False
+        while not logged_in:
+            logged_in = login()
+            
+        # Aqui você pode adicionar o código para o que deseja fazer após o login bem-sucedido,
+        # como listar livros disponíveis, permitir downloads, etc.
+        
+    except KeyboardInterrupt:
+        print("\nOperação interrompida pelo usuário.")
+    finally:
+        print("Encerrando a sessão...")
+
+if __name__ == "__main__":
+    main()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
